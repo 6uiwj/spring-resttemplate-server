@@ -42,7 +42,12 @@ public class ItemService {
 
         return getCallObject(query); //이미 아이템 가져오는 메서드 만들었으므로 이용하기 -> getCallObject 메서드 호출
     }
+
     public ItemResponseDto exchangeCall(String token, UserRequestDto requestDto) {
-        return null;
+        System.out.println("token = " + token);
+        System.out.println("requestDto.getUsername() = " + requestDto.getUsername());
+        System.out.println("requestDto.getPassword() = " + requestDto.getPassword());
+
+        return getCallList();
     }
 }
